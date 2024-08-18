@@ -19,5 +19,6 @@ export const pt_BR = {
         oneYear: '1 ano',
         twoYears: '2 anos',
         threeYears: '3 anos'
-    }
+    },
+    contact: 'Contato'
 };

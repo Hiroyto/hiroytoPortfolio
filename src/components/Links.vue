@@ -6,7 +6,7 @@
 </script>
 
 <template>
-    <div>
+    <div class="mx-14">
         <SectionTitle class="mb-6" :title="$t('links.title')"/>
         <div class="flex">
             <a href="https://www.linkedin.com/in/otavio-abe/">

@@ -19,5 +19,6 @@ export const en_US = {
         oneYear: '1 year',
         twoYears: '2 years',
         threeYears: '3 years'
-    }
+    },
+    contact: 'Contact me'
 };
