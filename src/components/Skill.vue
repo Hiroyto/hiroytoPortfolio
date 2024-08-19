@@ -12,7 +12,7 @@ import { computed } from 'vue';
             ? props.measure.split(' ') 
             : props.measure || [];
         return [
-            'border border-white h-10 rounded-full bg-blue-gradient flex',
+            'border border-white h-10 rounded-full bg-blue-gradient flex relative top-[-1px]',
             ...customClassesArray
         ].join(' ');
     });
@@ -23,7 +23,7 @@ const { years, image } = props;
 <template>
     <div class="flex">
         <img class="w-16 h-16" :src="image" alt="Icon">
-        <div class="ml-6 border border-white h-10 rounded-full w-full flex m-auto ">
+        <div class="ml-6 border border-white h-10 rounded-full w-full flex m-auto">
             <div :class="computedClasses">
                 <p class="text-white m-auto">{{ years }}</p>
             </div>

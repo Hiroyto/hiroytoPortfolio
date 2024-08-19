@@ -1,42 +1,42 @@
 <template>
-    <div class="flex items-center space-x-4">
-      <label for="language-select" class="text-gray-700">Select Language:</label>
-      <select
-        id="language-select"
-        v-model="currentLanguage"
-        @change="switchLanguage"
-        class="px-4 py-2 border rounded-lg bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+  <div class="flex fixed ml-4 mt-4">
+    <div class="flex border border-white rounded-xl">
+      <div
+        @click="switchLanguage('en_US')"
+        :class="[
+          'px-2 py-1 cursor-pointer',
+          currentLanguage === 'en_US'
+            ? 'border border-white bg-white rounded-l-[11px]'
+            : 'hover:scale-110'
+        ]"
       >
-        <option v-for="(label, code) in languages" :key="code" :value="code">
-          {{ label }}
-        </option>
-      </select>
+        <img class="w-10" src="../assets/png/twemoji--flag-united-states.png" alt="">
+      </div>
+      <div
+        @click="switchLanguage('pt_BR')"
+        :class="[
+          'px-2 py-1 cursor-pointer',
+          currentLanguage === 'pt_BR'
+            ? 'border border-white bg-white rounded-r-[10px]'
+            : 'hover:scale-110'
+        ]"
+      >
+        <img class="w-10" src="../assets/png/twemoji--flag-brazil.png" alt="">
+      </div>
     </div>
-  </template>
-  
-  <script lang="ts" setup>
-  import { ref } from 'vue';
-  import { useI18n } from 'vue-i18n';
-  
-  // Use o composable useI18n para acessar a instância do Vue I18n
-  const { locale } = useI18n();
-  
-  // Defina os idiomas disponíveis
-  const languages = {
-    en_US: 'English',
-    pt_BR: 'Français',
-  };
-  
-  // Estado do idioma selecionado
-  const currentLanguage = ref(locale.value);
-  
-  // Função para alterar o idioma
-  const switchLanguage = () => {
-    locale.value = currentLanguage.value;
-  };
-  </script>
-  
-  <style scoped>
-  /* Adicione estilos adicionais, se necessário */
-  </style>
-  
+  </div>
+</template>
+
+<script lang="ts" setup>
+import { ref } from 'vue';
+import { useI18n } from 'vue-i18n';
+
+const { locale } = useI18n();
+
+const currentLanguage = ref(locale.value);
+
+const switchLanguage = (code: string) => {
+  currentLanguage.value = code;
+  locale.value = code;
+};
+</script>

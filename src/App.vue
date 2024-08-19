@@ -9,6 +9,7 @@
 </script>
 
 <template>
+  <LanguageSwitcher/>
   <main class="bg-night flex min-h-screen max-h-screen items-center">
     <div class="min-w-[40vw] max-w-[70vw] space-y-14">
       <Profile/>
@@ -22,7 +23,6 @@
       <Education/>
       <Experience/>
       <Contact/>
-      <LanguageSwitcher/>
     </div>
   </main>
 </template>
