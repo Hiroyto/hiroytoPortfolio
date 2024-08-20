@@ -13,7 +13,6 @@ const languages = {
 
 const i18n = createI18n({
     locale: 'en_US',
-    fallbackLocale: 'pt_BR',
     allowComposition: true,
     messages: languages
 })

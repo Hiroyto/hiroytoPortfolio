@@ -10,19 +10,20 @@
 
 <template>
   <LanguageSwitcher/>
-  <main class="bg-night flex min-h-screen max-h-screen items-center">
-    <div class="min-w-[40vw] max-w-[70vw] space-y-14">
+  <main class="bg-night flex min-h-screen min-w-screen">
+    <div class="mx-6 mt-6 w-full space-y-6 mb-4">
       <Profile/>
       <Biography/>
       <Links/>
-    </div>
-
-    <div class="h-[80vh] border-white border-r"></div>
-
-    <div class="min-w-[35vw] max-w-[50vw] mx-14 space-y-14">
+      <Contact/>
       <Education/>
       <Experience/>
-      <Contact/>
     </div>
+
+    <!-- <div class="h-[80vh] border-white border-r"></div> -->
+
+    <!-- <div class="min-w-[35vw] max-w-[50vw] mx-14 space-y-14"> -->
+      <!-- <Contact/> -->
+    <!-- </div> -->
   </main>
 </template>

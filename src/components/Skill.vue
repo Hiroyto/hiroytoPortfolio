@@ -1,5 +1,6 @@
 <script lang="ts" setup>
-import { computed } from 'vue';
+    import { computed } from 'vue';
+    import { useI18n } from 'vue-i18n';
 
     const props = defineProps({
         years: String,
@@ -17,7 +18,10 @@ import { computed } from 'vue';
         ].join(' ');
     });
 
-const { years, image } = props;
+    const { image } = props;
+    const { t } = useI18n();
+
+    const translatedDate = computed(() => t(props.years!))
 </script>
 
 <template>
@@ -25,7 +29,7 @@ const { years, image } = props;
         <img class="w-16 h-16" :src="image" alt="Icon">
         <div class="ml-6 border border-white h-10 rounded-full w-full flex m-auto">
             <div :class="computedClasses">
-                <p class="text-white m-auto">{{ years }}</p>
+                <p class="text-white m-auto">{{ translatedDate }}</p>
             </div>
         </div>
     </div>

@@ -1,6 +1,6 @@
 export const en_US = {
     profile: {
-        presentation: 'Hi, I am Otavio!',
+        presentation: 'Hi, I am Otavio! 👋',
         description: 'Software Developer'
     },
     biography: {

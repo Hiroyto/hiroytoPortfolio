@@ -1,6 +1,6 @@
 export const pt_BR = {
     profile: {
-        presentation: 'Oi, eu sou o Otavio!',
+        presentation: 'Oi, eu sou o Otavio! 👋',
         description: 'Desenvolvedor de Software'
     },
     biography: {
