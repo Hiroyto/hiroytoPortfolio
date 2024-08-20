@@ -27,7 +27,7 @@
 <template>
     <div class="flex">
         <img class="w-16 h-16" :src="image" alt="Icon">
-        <div class="ml-6 border border-white h-10 rounded-full w-full flex m-auto">
+        <div class="ml-4 border border-white h-10 rounded-full w-full flex m-auto">
             <div :class="computedClasses">
                 <p class="text-white m-auto">{{ translatedDate }}</p>
             </div>

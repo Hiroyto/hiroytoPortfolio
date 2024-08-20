@@ -11,19 +11,18 @@
 <template>
   <LanguageSwitcher/>
   <main class="bg-night flex min-h-screen min-w-screen">
-    <div class="mx-6 mt-6 w-full space-y-6 mb-4">
-      <Profile/>
-      <Biography/>
-      <Links/>
-      <Contact/>
-      <Education/>
-      <Experience/>
+    <div class="mx-6 md:mx-0 mt-6 w-full mb-4 md:flex">
+      <div class="space-y-6 md:space-y-14 md:mx-14">
+        <Profile/>
+        <Biography/>
+        <Links/>
+        <Contact/>
+      </div>
+      <div class="md:h-[80vh] md:border-white md:border-r md:m-auto"></div>
+      <div class="space-y-6 md:space-y-14 md:mx-14 md:flex md:flex-col md:justify-center">        
+        <Education/>
+        <Experience/>
+      </div>
     </div>
-
-    <!-- <div class="h-[80vh] border-white border-r"></div> -->
-
-    <!-- <div class="min-w-[35vw] max-w-[50vw] mx-14 space-y-14"> -->
-      <!-- <Contact/> -->
-    <!-- </div> -->
   </main>
 </template>

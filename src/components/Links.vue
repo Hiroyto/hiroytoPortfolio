@@ -9,7 +9,7 @@ import InstaIcon from './icons/InstaIcon.vue';
 <template>
     <div>
         <SectionTitle class="mb-4" title='links.title'/>
-        <div class="flex space-x-8 justify-center mb-4">
+        <div class="flex space-x-8 mb-4 ml-4">
             <a class="border border-white rounded-full px-2 py-2" href="https://www.linkedin.com/in/otavio-abe/">
                 <LinkedinIcon/>
             </a>

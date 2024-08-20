@@ -8,7 +8,7 @@ export const en_US = {
         description: 'Brazilian born in 2002, involved with the world of computers since the age of 7 and passionate about technology ever since. I am enthusiastic about human-computer interaction and aim to spread and simplify our communication with the tech world more and more.',
     },
     links: {
-        title: 'Links',
+        title: 'My Links',
     },
     education: {
         title: 'Education',

@@ -1,13 +1,10 @@
 <template>
-    <div class="space-y-2">
+    <div class="space-y-2 md:space-y-6 md:w-[52vw]">
         <SectionTitle title='biography.title'/>
-        <p class="text-white text-xl font-thin text-justify ml-4">{{ $t('biography.description')}}</p>
+        <p class="text-white text-xl md:text-2xl font-thin text-justify ml-4">{{ $t('biography.description')}}</p>
     </div>
 </template>
 
 <script lang="ts" setup>
     import SectionTitle from './SectionTitle.vue';
-    import { useI18n } from 'vue-i18n';
-
-    const { t } = useI18n();
 </script>

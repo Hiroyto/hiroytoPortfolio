@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute bottom-3 right-2 md:top-2">
+  <div class="fixed bottom-3 right-2 md:top-2">
     <div class="flex border border-white rounded-xl">
       <div
       @click="switchLanguage('pt_BR')"
