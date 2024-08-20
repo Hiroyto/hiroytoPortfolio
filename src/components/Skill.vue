@@ -13,7 +13,7 @@
             ? props.measure.split(' ') 
             : props.measure || [];
         return [
-            'border border-white h-10 rounded-full bg-blue-gradient flex relative top-[-1px]',
+            'border border-white h-10 rounded-full bg-blue-gradient flex top-[-1px]',
             ...customClassesArray
         ].join(' ');
     });
