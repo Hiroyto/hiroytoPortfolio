@@ -29,7 +29,7 @@
         <img class="w-[72px] h-[72px]" :src="image" alt="Icon">
         <div class="ml-4 border-2 border-white h-10 rounded-full w-full m-auto flex items-center">
             <div :class="computedClasses">
-                <p class="text-white m-auto font-normal text-lg">{{ translatedDate }}</p>
+                <p class="text-white m-auto font-medium text-lg">{{ translatedDate }}</p>
             </div>
         </div>
     </div>
