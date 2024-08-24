@@ -12,7 +12,7 @@
   <LanguageSwitcher/>
   <main class="bg-night flex min-h-screen min-w-screen">
     <div class="mx-6 md:mx-0 mt-6 w-full mb-4 md:flex">
-      <div class="space-y-6 md:space-y-14 md:mx-14">
+      <div class="space-y-6 md:space-y-14 md:ml-14 md:mr-8">
         <Profile/>
         <Biography/>
         <Links/>

@@ -16,9 +16,9 @@ export const pt_BR = {
     },
     experience: {
         title: 'Experiência',
-        oneYear: '1 ano',
-        twoYears: '2 anos',
-        threeYears: '3 anos'
+        oneYear: '1 Ano',
+        twoYears: '2 Anos',
+        threeYears: '3 Anos'
     },
     contact: 'Contato'
 };

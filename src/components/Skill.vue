@@ -13,7 +13,7 @@
             ? props.measure.split(' ') 
             : props.measure || [];
         return [
-            'border border-white h-10 rounded-full bg-blue-gradient flex top-[-1px]',
+            'border-white h-[36px] rounded-full flex grow-animation bg-blue-gradient',
             ...customClassesArray
         ].join(' ');
     });
@@ -26,11 +26,30 @@
 
 <template>
     <div class="flex">
-        <img class="w-16 h-16" :src="image" alt="Icon">
-        <div class="ml-4 border border-white h-10 rounded-full w-full flex m-auto">
+        <img class="w-[72px] h-[72px]" :src="image" alt="Icon">
+        <div class="ml-4 border-2 border-white h-10 rounded-full w-full m-auto flex items-center">
             <div :class="computedClasses">
-                <p class="text-white m-auto">{{ translatedDate }}</p>
+                <p class="text-white m-auto font-normal text-lg">{{ translatedDate }}</p>
             </div>
         </div>
     </div>
 </template>
+
+<style>
+    @keyframes growFromLeft {
+    from {
+        transform: scaleX(0);
+        transform-origin: left;
+        opacity: 0;
+    }
+    to {
+        transform: scaleX(1);
+        transform-origin: left;
+        opacity: 1;
+    }
+    }
+
+    .grow-animation {
+    animation: growFromLeft 1s ease-out forwards;
+    }
+</style>

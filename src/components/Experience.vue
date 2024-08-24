@@ -14,3 +14,9 @@
         </div>
     </div>
 </template>
+
+<style>
+  .w-calc {
+    width: calc(100% - 1px);
+  }
+</style>

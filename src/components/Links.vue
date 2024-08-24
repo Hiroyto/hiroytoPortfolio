@@ -11,13 +11,13 @@ import InstaIcon from './icons/InstaIcon.vue';
         <SectionTitle class="mb-4" title='links.title'/>
         <div class="flex space-x-8 mb-4 ml-4">
             <a class="border border-white rounded-full px-2 py-2" href="https://www.linkedin.com/in/otavio-abe/">
-                <LinkedinIcon/>
+                <LinkedinIcon class="hover:scale-125 duration-300"/>
             </a>
             <a class="border border-white rounded-full px-2 py-2" href="https://github.com/OtavioHiroyto">
-                <GitIcon/>
+                <GitIcon class="hover:scale-125 duration-300"/>
             </a>
             <a class="border border-white rounded-full px-2 py-2" href="https://github.com/OtavioHiroyto">
-                <InstaIcon/>
+                <InstaIcon class="hover:scale-125 duration-300"/>
             </a>
         </div>
     </div>

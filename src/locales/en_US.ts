@@ -16,9 +16,9 @@ export const en_US = {
     },
     experience: {
         title: 'Experience',
-        oneYear: '1 year',
-        twoYears: '2 years',
-        threeYears: '3 years'
+        oneYear: '1 Year',
+        twoYears: '2 Years',
+        threeYears: '3 Years'
     },
     contact: 'Contact me'
 };

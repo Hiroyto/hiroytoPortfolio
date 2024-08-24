@@ -4,7 +4,7 @@
 
 <template>
     <div class="justify-center flex">
-        <a class="mb-6 justify-center bg-blue-gradient w-72 md:h-[60px] text-xl h-18 border-white rounded-full flex text-white items-center" href="mailto:oieee@gmail.com">{{ $t('contact')}}
+        <a class="hover:scale-125 duration-300 mb-6 justify-center bg-blue-gradient w-72 md:h-[60px] text-xl h-18 border-white rounded-full flex text-white items-center" href="mailto:oieee@gmail.com">{{ $t('contact')}}
             <MailIcon/>
         </a>
     </div>
